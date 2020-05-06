@@ -1,0 +1,94 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=login] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+.modal-content-login {
+  background-color: #fefefe;/* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%;
+  display: inline-block;/* Could be more or less, depending on screen size */
+}
+
+/* Modal Content/Box */
+.modal-content-register {
+  background-color: #fefefe;/* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%;
+  display: inline-block;/* Could be more or less, depending on screen size */
+}
+
+.or{
+  width: 15%;
+  display: inline-block;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.header {
+padding: 10px;
+text-align: center;
+background: #1abc9c;
+color: white;
+font-size: 30px;
+}
+
+@media (min-width: 700px){
+  .wrap {
+    background: #fefefe;
+    text-align: center;
+    display: flex;
+    align-items: center; /*horizontal centering*/
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .wrap{
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-content-login{width:100%;}
+  .modal-content-register{width:100%;}
+  .modal-content-or{width:100%;}
+}

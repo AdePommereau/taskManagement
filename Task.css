@@ -1,0 +1,198 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 25px;
+}
+
+body.light-mode{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode{
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+/* Set a style for all buttons */
+button[name="username"], [name="email"], [name="name"], [name="password"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.8;
+}
+
+button[name="log_out"] {
+  background-color: #eb4034;
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+  cursor: pointer;
+  width: 35%;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+button[name="add"], [name="import"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 8px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+
+button[name="edit"], [name="remove"], [name="export"]{
+  background-color: #000;
+  color: white;
+  padding: 14px 20px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+button[name="new"], [name="cancel"], [name="changeUser"], [name="changeEmail"], [name="changePassword "], [name="import_selected"]{
+  background-color: #000;
+  color: white;
+  padding: 14px 20px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+@media (min-width: 700px){
+  .wrap {
+    text-align: center;
+    display: flex;
+    align-items: center; /*horizontal centering*/
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .wrap{
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .account{width:100%; display: inline-block;}
+  .task{width:100%; display: inline-block;}
+}
+
+.account {
+/* 5% from the top, 15% from the bottom and centered */
+width: 20%;
+display: inline-block;/* Could be more or less, depending on screen size */
+border: 1px solid #888;
+}
+
+.task {/* 5% from the top, 15% from the bottom and centered */
+width: 80%;
+display: inline-block;/* Could be more or less, depending on screen size */
+padding-left: 40px;
+}
+
+.header {
+padding: 10px;
+text-align: center;
+background: #1abc9c;
+color: white;
+font-size: 30px;
+}
+
+.buttons{
+  width: 20%;
+}
+
+table{
+  width: 100%;
+}
+
+th{
+  background-color: #4CAF50;
+  color:white;
+  text-align: center;
+  opacity: 0.6;
+}
+
+    /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal-content {
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  background-color: #ffffff;
+}
+
+h2{
+  color: #4CAF50;
+}
+
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+.container{
+  padding: 10px;
+}
+
+.subwrap{
+  width:50%;
+}
+
+.state{
+  text-align: left;
+}
+
+.description{
+  padding-left: 10px;
+  padding-right: 10px;
+}
