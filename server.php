@@ -1,10 +1,10 @@
 <?php
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-define(host,"emps-sql.ex.ac.uk");
-define(username,"arjd201");
-define(password,"arjd201");
-define(database,"arjd201");
+define(host,"***********");
+define(username,"*********");
+define(password,"******");
+define(database,"*******");
 define(port,3306);
 
 
